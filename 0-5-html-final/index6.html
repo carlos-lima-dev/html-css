@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #E9EAEC;
+
+        }
+
+        .card {
+            background-color: white;
+            width: 350px;
+            height: 346px;
+            border-radius: 16px;
+            margin: 50px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 20px;
+            margin-right: 23px;
+            margin-bottom: 15px;
+        }
+
+        .master div {
+            width: 302px;
+            height: 90px;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            margin-bottom: 20px;
+            border-radius: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+            list-style: none;
+        }
+
+        .button {
+            text-align: center;
+        }
+
+        .button button {
+            width: 302px;
+            height: 46px;
+            background-color: #4C6FFF;
+            border-style: none;
+            border-radius: 5px;
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <header class="header">
+            <p><b>Payment methods</b></p>
+            <p><a style="color: blue;" href="#edit">Edit</a></p>
+        </header>
+        <form class="master">
+            <div>
+                <label for="card1"><img style="padding: 15px; float: left;" src="assets/mastercard black.png"
+                        alt="DebitCard"></label>
+                <p class="texto">Mastercard: 5432</p>
+                <p class="texto">Exp. date:12/20</p>
+                <input type="radio" name="cartao" id="card1">
+            </div>
+
+            <div class="card--option">
+
+                <label for="card2"><img style="padding: 15px; float: left;" src="assets/visa blue.png"
+                        alt="DebitCard"></label>
+                <p>Mastercard: 4291</p>
+                <p>Exp. date:12/20</p>
+                <input type="radio" name="cartao" id="card2">
+            </div>
+
+        </form>
+        <div class="button">
+            <button type="button">Show More</button>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
