@@ -1,0 +1,40 @@
+/*desktop*/
+.section__5 {
+  background-color: #f7eee3;
+}
+.section__5_text {
+  max-width: 340px;
+  max-height: 152px;
+  padding: 100px 0px 0px 147px;
+  font-size: 20px;
+}
+.section__5_text h3 {
+  font-size: 14px;
+  text-decoration: underline;
+}
+.section__5_text a {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.section__5_image_size {
+  margin-left: auto;
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .section__5_text {
+    display: flex;
+    flex-wrap: wrap;
+    height: 152px;
+    padding: 0px;
+    font-size: 20px;
+  }
+
+  .section__5_image_size {
+    margin-left: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    max-width: 292px;
+  }
+}

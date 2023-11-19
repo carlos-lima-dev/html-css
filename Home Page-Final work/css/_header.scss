@@ -1,0 +1,70 @@
+/*desktop*/
+
+.top_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px 0px 20px;
+  background-color: white;
+}
+
+.logo_size {
+  max-width: 100px;
+  max-height: 64px;
+}
+.burger_logo {
+  display: none;
+}
+.nav_display {
+  display: flex;
+  position: relative;
+}
+
+.align__links {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  width: 100%;
+}
+
+.sub_menu {
+  width: 200px;
+  position: absolute;
+  right: 0px;
+  visibility: hidden;
+  z-index: 1;
+}
+.sub_menu a {
+  color: black;
+}
+.nav_display li {
+  transition: 0.5s ease-in-out;
+}
+.sub_menu li {
+  list-style: none;
+  padding: 10px 20px;
+  background-color: white;
+}
+
+.sub_menu li:hover {
+  font-size: large;
+}
+
+li:hover .sub_menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*mobile*/
+
+@media (max-width: 768px) {
+  .main_content {
+    color: black;
+  }
+  .nav_display {
+    display: none;
+  }
+  .burger_logo {
+    display: flex;
+  }
+}

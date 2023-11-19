@@ -1,0 +1,34 @@
+.top__footer {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #514f4d;
+}
+
+.top__footer__subcribe {
+  display: flex;
+  flex-direction: row;
+}
+
+.top__footer__subcribe input {
+  padding: 11px 25px;
+  background-color: #514f4d;
+  border: 1px solid white;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.top__footer__subcribe label {
+  background-color: white;
+  color: #131313;
+  border: 1px solid white;
+  padding: 11px 24px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.top__footer__icons {
+  display: flex;
+  gap: 30px;
+}/*# sourceMappingURL=copy.css.map */

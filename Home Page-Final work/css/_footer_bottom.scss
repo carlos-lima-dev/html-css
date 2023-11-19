@@ -1,0 +1,35 @@
+/*mobile */
+
+.bottom__footer {
+  background-color: #131313;
+  color: white;
+}
+
+.text_footer {
+  padding: 50px 15px 0px 15px;
+}
+.text_footer h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.text_footer p {
+  font-size: 14px;
+  font-weight: 400;
+}
+.text_footer_small {
+  padding: 20px;
+  font-size: 10px;
+}
+@media (min-width: 768px) {
+  .footer_flex_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer_flex_between {
+    display: flex;
+
+    justify-content: space-between;
+  }
+}

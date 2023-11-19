@@ -1,0 +1,61 @@
+/*Descktop*/
+
+.section__relative {
+  position: relative;
+}
+
+.section__1_image {
+  width: 100%;
+}
+
+.text__section_1 {
+  position: absolute;
+  top: 35px;
+  left: 95px;
+}
+
+.text__section_1 h1 {
+  font-size: 28px;
+  color: white;
+}
+.btn_yellow {
+  max-width: 170px;
+  background-color: #fced70;
+  color: black;
+  padding: 15px 20px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  border: 0;
+  cursor: pointer;
+}
+
+/*Mobile*/
+
+@media (max-width: 768px) {
+  .section__relative {
+    height: 600px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .section__1_image {
+    height: 100%;
+    object-fit: cover;
+  }
+  .text__section_1 {
+    position: absolute;
+    top: 450px;
+    left: 30px;
+  }
+
+  .text__section_1 h1 {
+    font-size: 23px;
+    color: white;
+  }
+  .btn_yellow {
+    font-size: 14px;
+  }
+}
