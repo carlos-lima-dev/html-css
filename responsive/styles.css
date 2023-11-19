@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
+
+/* menu bar*/
+
+.main-container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.full-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  background-color: white;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+.nav-size {
+  padding: 0px 10px;
+}
+.btn-menu {
+  display: flex;
+  flex-direction: row;
+}
+.btn-menu li {
+  padding: 10px 10px;
+}
+.after {
+  position: relative;
+  transition-duration: 2s;
+}
+
+.btn-menu li:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.after-active:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: red;
+  left: 0;
+  bottom: 0;
+}
+/* card */
+.card-image {
+  width: 100%;
+  max-width: 180px;
+  aspect-ratio: 1;
+  flex-shrink: 0;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.text-flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+  padding: 5px;
+}
+.text-flexbox p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.space-bet {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.text-flexbox h1 {
+  font-size: 20px;
+  font-weight: 900;
+}
+.color {
+  color: grey;
+}
+
+.color a {
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  .main-container {
+    width: 90%;
+  }
+  .all-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+  .card-image {
+    width: 100%;
+    max-width: 250px;
+    aspect-ratio: 1;
+    flex-shrink: 0;
+  }
+
+  .card img {
+    border-radius: 20px;
+  }
+
+  .text-flexbox {
+    width: 80%;
+    max-width: 200px;
+    border-radius: 20px;
+    margin: 0 auto;
+    box-shadow: -2px 3px 9px 0px;
+    padding: 10px;
+    background-color: white;
+    transform: translate(0px, -35px);
+  }
+
+  .text-flexbox:hover {
+    transform: translate(0px, -45px);
+  }
+}
