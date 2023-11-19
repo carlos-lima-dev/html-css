@@ -1,0 +1,125 @@
+.section_1 {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.section_1_size img {
+  width: 100%;
+  max-width: 700px;
+}
+
+.text_position {
+  padding-top: 15px;
+  position: relative;
+}
+
+.Radio_flex {
+  display: flex;
+  gap: 15px;
+}
+
+.check_flex {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.check_align {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+input[type="checkbox"] {
+  accent-color: #9c9c9c;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.blue {
+  width: 15px;
+  height: 15px;
+  background: blue;
+  border-radius: 50%;
+}
+.green {
+  width: 15px;
+  height: 15px;
+  background: green;
+  border-radius: 50%;
+}
+.green_2 {
+  width: 15px;
+  height: 15px;
+  background: rgb(1, 75, 1);
+  border-radius: 50%;
+}
+.red {
+  width: 15px;
+  height: 15px;
+  background: red;
+  border-radius: 50%;
+}
+.black {
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 50%;
+}
+
+.picker_hover:hover {
+  border: 1px solid black;
+}
+
+.check_align label:hover {
+  font-size: large;
+}
+.ckeckbox_size {
+  width: 15px;
+  height: 15px;
+}
+.btn_yellow {
+  max-width: 150px;
+  background-color: #fced70;
+  color: black;
+  padding: 15px 20px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  right: -100px;
+  bottom: 20px;
+}
+.btn_yellow:hover {
+  font-size: 15px;
+  cursor: pointer;
+}
+@media (max-width: 951px) {
+  .section_1 {
+    padding-bottom: 150px;
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section_1 {
+    padding-bottom: 150px;
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+  .btn_yellow {
+    right: -130px;
+    bottom: -70px;
+  }
+  .check_flex {
+    gap: 15px;
+  }
+  .check_flex label {
+    color: #9c9c9c;
+  }
+}
